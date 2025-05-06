@@ -5,6 +5,6 @@ const router = Router();
 
 router.get('/', getAllQuestions);
 router.get('/random', randomQuestion);
-router.get('/', getQuestionById);
+router.get('/id', getQuestionById);
 
 export default router;

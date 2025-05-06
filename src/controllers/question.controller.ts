@@ -4,6 +4,7 @@ import Question from '../models/question.model';
 export const getAllQuestions = async (req: Request, res: Response) => {
   try {
     const questions = await Question.find();
+    console.log("here");
     res.json(questions);
   } catch (error) {
     res.status(500).json({ message: 'Erreur lors de la récupération des questions.' });

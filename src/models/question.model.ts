@@ -18,4 +18,4 @@ function arrayLimit(val: string[]) {
   return val.length === 5;
 }
 
-export default model<IQuestion>('Question', questionSchema);
+export default model<IQuestion>('Question', questionSchema, 'questions');
